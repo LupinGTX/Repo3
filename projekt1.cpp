@@ -14,9 +14,9 @@ int Silnia(int a) {
 }
 
 int main() {
-    int a, b;
-    cout << "Podaj liczbe calkowita ";
-    cin >> a >> b;
+    int a;
+    cout << "Podaj liczbe calkowita: ";
+    cin >> a;
     int wyjscie;
     do {
         cout << endl;
@@ -28,7 +28,7 @@ int main() {
         cin >> wyjscie;
 
 	if (wyjscie == 1) { 
-		cout << "Silnie wprowadzynch liczb:" << endl << Silnia(a) << endl << Silnia(b) << endl;
+		cout << "Silnia wprowadzonej liczby: " << Silnia(a) << endl;
 	}
     } while(wyjscie != 0);
     return 0;
